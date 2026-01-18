@@ -179,13 +179,22 @@ Supporting dimension tables:
 * Session attributes
 * Other analytical dimensions
 
-Artifacts included in this repository:
+Fact Voice Session model:
 
-* Screenshot of `fact_voice_ai_session` query results
-* Screenshot of the dbt model output
-* Data dictionary / schema overview for `fact_voice_ai_session`
+- **Screenshot of `fact_voice_ai_session` query results**
 
-These artifacts demonstrate:
+- ![fact_voice_ai_session](images/first_query_result.png)
+
+- ![fact_voice_ai_session](images/2_query_result.png)
+
+- ![fact_voice_ai_session](images/3_query_result.png)
+
+- **Data dictionary / schema overview for `fact_voice_ai_session`**
+
+- ![fact_voice_ai_session](images/model_datatype.png)
+
+
+These artifacts show:
 
 * Correct grain
 * Referential integrity
