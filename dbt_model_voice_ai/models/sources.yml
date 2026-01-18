@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: voice_ai_analytics_raw 
+    database: VOICE_AI_DB
+    schema: RAW
+    description: >
+      Source data for Voice AI Analytics.
+    tables:
+      - name: users
+      - name: voice_sessions
+      - name: voice_turns
+      - name: voice_ai_metrics
+      - name: applications
