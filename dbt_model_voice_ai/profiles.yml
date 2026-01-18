@@ -1,0 +1,14 @@
+dbt_model_voice_ai_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('VOICE_AI_SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('VOICE_AI_SNOWFLAKE_USER') }}"
+      password: "{{ env_var('VOICE_AI_SNOWFLAKE_PASSWORD') }}"
+      role: "{{ env_var('VOICE_AI_SNOWFLAKE_ROLE') }}"
+      database: "{{ env_var('VOICE_AI_SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ env_var('VOICE_AI_SNOWFLAKE_WAREHOUSE') }}"
+      schema: "{{ env_var('VOICE_AI_SNOWFLAKE_SCHEMA') }}"
+      client_session_keep_alive: False
+      connect_timeout: 300
